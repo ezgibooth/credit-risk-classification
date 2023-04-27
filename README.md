@@ -1,4 +1,4 @@
-# credit-risk-classification
+# Credit Risk Classification
 
 ## Overview of the Analysis
 
@@ -15,21 +15,25 @@
 Below is a summary of the results, the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1 - Logistic Regression Model with Initial Data:
-![1](https://user-images.githubusercontent.com/118090932/234967436-ff9ee31a-835d-45b9-9ff5-05a1256df428.png)
-![2](https://user-images.githubusercontent.com/118090932/234967448-bb7e8dad-72da-46f9-b23f-fa1b03eb0dfc.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/118090932/234967436-ff9ee31a-835d-45b9-9ff5-05a1256df428.png" width="400" height="150">
+</p>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/118090932/234967448-bb7e8dad-72da-46f9-b23f-fa1b03eb0dfc.png" width="200" height="50">
+</p>
 
 * Machine Learning Model 2 - Logistic Regression Model Randomly Oversampled Data:
-![3](https://user-images.githubusercontent.com/118090932/234967498-05da75fc-c846-478e-be3e-bd8c928b73bd.png)
-![4](https://user-images.githubusercontent.com/118090932/234967516-0f5b6407-077a-4738-9068-3f204ade5877.png)
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/118090932/234967498-05da75fc-c846-478e-be3e-bd8c928b73bd.png" width="400" height="150">
+</p>
+<p align="center">
+<img src="https://user-images.githubusercontent.com/118090932/234967516-0f5b6407-077a-4738-9068-3f204ade5877.png" width="200" height="50">
+</p>
 
 ## Summary
 
 The logistic regression model performs well in predicting '0', healthy loans, with a precision score of 100% and accuracy of 99% and a recall score of 99%. These results indicate that the model works well in correctly identifying healthy loans. However, this does not hold true for high-risk loans. The model's precision for correctly predicting '1', high-risk loans, is lower, only at 84%. The recall value is also slightly lower than that of the healthy loans, at 93%. These scores indicate that while the logistic regression model performs very well in predicting healthy loans, it does not perform as well when it comes to predicting high-risk loans. Part of the reason may be due to the imbalance of the target values, as there are 75036 healthy loans versus only 2500 high-risk loans, in this dataset.
 
 The logistic regression model fit with oversampled data has a slightly higher accuracy rate compared to the initial regression model. While performance with predicting healthy loans are equally good, it seems this model fit with oversampled data is better at identifying high-risk loans with a higher recall score.
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
